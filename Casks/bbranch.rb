@@ -3,7 +3,7 @@ cask "bbranch" do
   name "bbranch"
   desc "CLI tool for creating Git branches across multiple Bitbucket repos"
   homepage "https://github.com/chinhstringee/bbranch"
-  version "0.1.1"
+  version "0.2.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "bbranch" do
   on_macos do
     on_intel do
       url "https://github.com/chinhstringee/bbranch/releases/download/v#{version}/bbranch_#{version}_darwin_amd64.tar.gz"
-      sha256 "f9fdb8ab25a838d5d55c68b20494366dd3fc0e0465b1ace1ea89e390accd3251"
+      sha256 "c45c9cd9bf3f8b796f2fe71e0204e4348dfa9b5029a7c33a16cd89c63716a899"
     end
     on_arm do
       url "https://github.com/chinhstringee/bbranch/releases/download/v#{version}/bbranch_#{version}_darwin_arm64.tar.gz"
-      sha256 "44b1e71189960d9c0077f4830f64a144da90d2432d2227f22beed8e2784b2742"
+      sha256 "dacce7dac211edcd23cb376eb8631b0dae862f19e5740d0d26820b147b641bd8"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/chinhstringee/bbranch/releases/download/v#{version}/bbranch_#{version}_linux_amd64.tar.gz"
-      sha256 "2db3be1b242ecd7b82cd0691990d1219ff9c0174f979c0a72470aaaf3f487eda"
+      sha256 "1e35dca5545bcc22d6598304d110b8d503a82cdf64ec4e5e34bd1bc2b5f9a739"
     end
     on_arm do
       url "https://github.com/chinhstringee/bbranch/releases/download/v#{version}/bbranch_#{version}_linux_arm64.tar.gz"
-      sha256 "1070e08ac74d08e3a85d08a77bdbd1f79fbfc36d9baf320b116a7aaa4e1aa411"
+      sha256 "493b94e09fe45cce36eb098588e0c554cd4d437a40a5a0ec0744877e71e8b360"
     end
   end
 
