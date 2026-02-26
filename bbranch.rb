@@ -5,21 +5,21 @@
 class Bbranch < Formula
   desc "CLI tool for creating Git branches across multiple Bitbucket repos"
   homepage "https://github.com/chinhstringee/bbranch"
-  version "0.4.0"
+  version "0.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/chinhstringee/bbranch/releases/download/v0.4.0/bbranch_0.4.0_darwin_amd64.tar.gz"
-      sha256 "4485d8025603af033c14eb7689aa9795aba7f488695b59bf39acd5abf6d84488"
+      url "https://github.com/chinhstringee/bbranch/releases/download/v0.4.1/bbranch_0.4.1_darwin_amd64.tar.gz"
+      sha256 "00a4267e732f2b619f82a0fcb9053c1cd7626ef8545d019dafa814d9450a6137"
 
       define_method(:install) do
         bin.install "bbranch"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/chinhstringee/bbranch/releases/download/v0.4.0/bbranch_0.4.0_darwin_arm64.tar.gz"
-      sha256 "a5f157f4f317d6ad681b73f725a9896f877304e07b6419f231e42f06008de23c"
+      url "https://github.com/chinhstringee/bbranch/releases/download/v0.4.1/bbranch_0.4.1_darwin_arm64.tar.gz"
+      sha256 "304c2a2bb1403e5b0e5d0adde46fc31e73a92c9d63405d651d8435963b900178"
 
       define_method(:install) do
         bin.install "bbranch"
@@ -29,15 +29,15 @@ class Bbranch < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chinhstringee/bbranch/releases/download/v0.4.0/bbranch_0.4.0_linux_amd64.tar.gz"
-      sha256 "0c8978dce512b9e62e05e01d366eb916e645727c3c0522ee3b622ab3900b912e"
+      url "https://github.com/chinhstringee/bbranch/releases/download/v0.4.1/bbranch_0.4.1_linux_amd64.tar.gz"
+      sha256 "217c14cb8308d17daab1e698473b47398ae49995e04a92d1108ad12399b5b22b"
       define_method(:install) do
         bin.install "bbranch"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chinhstringee/bbranch/releases/download/v0.4.0/bbranch_0.4.0_linux_arm64.tar.gz"
-      sha256 "b49be1254667bf97029477cba07807ab608dd59f6f82da1c4069813b46951738"
+      url "https://github.com/chinhstringee/bbranch/releases/download/v0.4.1/bbranch_0.4.1_linux_arm64.tar.gz"
+      sha256 "574e1c08d660d11e58406a4644880ebddf438e81cab1e6be9c31edae9d9329f2"
       define_method(:install) do
         bin.install "bbranch"
       end
