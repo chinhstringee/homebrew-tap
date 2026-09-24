@@ -5,21 +5,21 @@
 class Buck < Formula
   desc "Multi-repo orchestration tool for Bitbucket"
   homepage "https://github.com/chinhstringee/buck"
-  version "0.10.0"
+  version "0.11.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/chinhstringee/buck/releases/download/v0.10.0/buck_0.10.0_darwin_amd64.tar.gz"
-      sha256 "797b859dcf617e3a3bfc68356d5fe69e79b343b756991beb58514c27ca1e5912"
+      url "https://github.com/chinhstringee/buck/releases/download/v0.11.0/buck_0.11.0_darwin_amd64.tar.gz"
+      sha256 "0de5d2d38c183948bd818f16abdfd9d10d8096ce62067e65d75f03bd47a42f3e"
 
       define_method(:install) do
         bin.install "buck"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/chinhstringee/buck/releases/download/v0.10.0/buck_0.10.0_darwin_arm64.tar.gz"
-      sha256 "39ac92f3cdb043f08bee8495fba0c85c7b559d0ab7b84a66f9ea8279a3ff34ea"
+      url "https://github.com/chinhstringee/buck/releases/download/v0.11.0/buck_0.11.0_darwin_arm64.tar.gz"
+      sha256 "4b41bb1e29fb5ff6604a00cfaba5fb1c19c6e11d77b61fa9838a31e7f12cc60c"
 
       define_method(:install) do
         bin.install "buck"
@@ -29,15 +29,15 @@ class Buck < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chinhstringee/buck/releases/download/v0.10.0/buck_0.10.0_linux_amd64.tar.gz"
-      sha256 "673df52ccea75cec5abe3ac0d8084b1c30578ce49a02010bfb87c9fb6e0c9e21"
+      url "https://github.com/chinhstringee/buck/releases/download/v0.11.0/buck_0.11.0_linux_amd64.tar.gz"
+      sha256 "5256df663afea5ddbfbba0ef9eb0a85144b2abecd005744ccab63b6f862874b5"
       define_method(:install) do
         bin.install "buck"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chinhstringee/buck/releases/download/v0.10.0/buck_0.10.0_linux_arm64.tar.gz"
-      sha256 "bdef64a2315af201da8c3f9637c75f73350131c3368e1093a7e84ac10f7426e0"
+      url "https://github.com/chinhstringee/buck/releases/download/v0.11.0/buck_0.11.0_linux_arm64.tar.gz"
+      sha256 "372049e640c610b3fe70301f605eea71808cfc18e179baddc8339791356612ec"
       define_method(:install) do
         bin.install "buck"
       end
